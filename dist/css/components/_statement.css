@@ -1,4 +1,4 @@
-.extrato {
+.statement {
     background-color: #f5f5f5;
     padding: 30px;
     border-radius: 8px;
@@ -6,32 +6,32 @@
     margin-left: 24px;
 
     & h3 {
-        font-size: var(--fonte-t1);
+        font-size: var(--font-t1);
         padding: 0;
         margin-block: 0 32px;
     }
 
-    & .transacoes-group {
+    & .transactions-group {
         margin-bottom: 16px;
         
-        .mes-group {
-            color: var(--cor-secundaria);
+        .month-group {
+            color: var(--secondary-color);
             font-weight: 600;
-            font-size: var(--fonte-t3);
+            font-size: var(--font-t3);
         }
 
-        .transacao-item {
+        .transaction-item {
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
 
-            .transacao-info {
+            .transaction-info {
                 width: 180px;
-                border-bottom: 1px solid var(--cor-secundaria);
+                border-bottom: 1px solid var(--secondary-color);
                 padding-bottom: 16px;
                 margin-bottom: 16px;
 
-                .tipo {
+                .type {
                     display: block;
                 }
 
@@ -40,11 +40,11 @@
                 }
             }
 
-            .data {
-                color: var(--cor-tercearia);
+            .date {
+                color: var(--tertiary-color);
             }
 
-            &:last-of-type .transacao-info {
+            &:last-of-type .transaction-info {
                 border-bottom: none;
                 margin-bottom: 0;
             }
