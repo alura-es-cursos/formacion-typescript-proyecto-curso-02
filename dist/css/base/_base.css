@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --fonte-padrao: 'Inter', sans-serif;
-    --fonte-tamanho-padrao: 16px;
-    --fonte-t1: 25px;
-    --fonte-t2: 20px;
-    --fonte-t3: 13px;
-    --cor-primaria: #000;
-    --cor-secundaria: #47A138;
-    --cor-tercearia: #CBCBCB;
-    --cor-quaternaria: #E4EDE3;
-    --largura-padrao: 1200px;
+    --standard-font: 'Inter', sans-serif;
+    --size-standard-font: 16px;
+    --font-t1: 25px;
+    --font-t2: 20px;
+    --font-t3: 13px;
+    --primary-color: #000;
+    --secondary-color: #47A138;
+    --tertiary-color: #CBCBCB;
+    --quaternary-color: #E4EDE3;
+    --standard-width: 1200px;
 }
 
 *, ::before, ::after {
@@ -29,22 +29,22 @@ html, body {
 }
 
 body {
-    font-family: var(--fonte-padrao);
-    font-size: var(--fonte-tamanho-padrao);
-    color: var(--cor-primaria);
+    font-family: var(--standard-font);
+    font-size: var(--size-standard-font);
+    color: var(--primary-color);
     font-weight: 400;
     line-height: 1.5;
-    background-color: var(--cor-quaternaria);
+    background-color: var(--quaternary-color);
     overflow-x: hidden;
     padding-bottom: 24px;
 }
 
 a {
-    color: var(--cor-primaria);
+    color: var(--primary-color);
     text-decoration: none;
 
     &:hover {
-        color: var(--cor-secundaria);
+        color: var(--secondary-color);
     }
 }
 
@@ -56,8 +56,8 @@ a {
 }
 
 .container-padding {
-    padding-left: calc((100% - var(--largura-padrao)) / 2);
-    padding-right: calc((100% - var(--largura-padrao)) / 2);
+    padding-left: calc((100% - var(--standard-width)) / 2);
+    padding-right: calc((100% - var(--standard-width)) / 2);
 
     @media (max-width: 1200px) {
         padding-left: 20px;
@@ -69,6 +69,6 @@ main.flex {
     align-items: stretch;
 }
 
-.coluna-central {
+.central-column {
     flex-grow: 1;
 }

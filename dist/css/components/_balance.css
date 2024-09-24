@@ -1,31 +1,31 @@
-.block-saldo {
+.block-balance {
     height: 400px;
     padding: 24px;
     border-radius: 8px;
     background-image: url('../../images/saldo-bg1.png'), url('../../images/saldo-bg2.png');
     background-position: bottom left, top right;
     background-repeat: no-repeat;
-    background-color: var(--cor-secundaria);
+    background-color: var(--secondary-color);
     color: #fff;
 
     & h2 {
-        font-size: var(--fonte-t1);
+        font-size: var(--font-t1);
         padding: 0;
         margin-block: 0 24px;
         
         & + time {
-            font-size: var(--fonte-t3);
+            font-size: var(--font-t3);
         }
     }
 
     .flex {
         justify-content: flex-end;
 
-        .saldo-valor {
+        .statement-value {
             min-width: 180px;
 
             & strong {
-                font-size: var(--fonte-t2);
+                font-size: var(--font-t2);
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
@@ -39,7 +39,7 @@
             }
 
             .cc {
-                .valor {
+                .value {
                     display: block;
                     font-size: 30px;
                 }
