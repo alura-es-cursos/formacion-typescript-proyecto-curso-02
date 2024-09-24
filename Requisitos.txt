@@ -1,20 +1,21 @@
-* Cada transação realizada no sistema deve possuir SOMENTE as seguintes informações:
-  1) Data da Transação (Date)
-  2) Tipo de Transação (Depósito, Transferência, Pagamento de Boleto)
-  3) Valor da Transação (valor maior que zero)
+* Cada transacción realizada en el sistema debe contener ÚNICAMENTE la siguiente información:
+  1) Fecha de la Transacción (Date)
+  2) Tipo de Transacción (Depósito, Transferencia, Pago de Factura)
+  3) Monto de la Transacción (monto mayor a cero)
 
-* Sempre que a transação for do tipo DEPÓSITO, o valor da transação deve ser adicionado ao saldo da conta.
-* Sempre que a transação for do tipo TRANSFERÊNCIA ou PAGAMENTO DE BOLETO, o valor da transação deve ser subtraído do saldo da conta.
-* O saldo deve sempre ser atualizado na tela da aplicação a cada transação realizada.
+* Siempre que la transacción sea del tipo DEPÓSITO, el monto de la transacción debe sumarse al saldo de la cuenta.
+* Siempre que la transacción sea del tipo TRANSFERENCIA o PAGO DE FACTURA, el monto de la transacción debe restarse del saldo de la cuenta.
+* El saldo debe actualizarse en la pantalla de la aplicación con cada transacción realizada.
 
 ---------------------------------------------
 
-* As informações da conta devem ficar num módulo específico "Conta"
-- Saldo 
-- Data de Acesso 
-- Registro de Transações realizadas
-- Histórico de transações 
+* La información de la cuenta debe estar en un módulo específico llamado "Cuenta"
+- Saldo
+- Fecha de Acceso
+- Registro de Transacciones realizadas
+- Historial de transacciones
 
-* Os componentes
-  - Nova transação: deve apenas coletar as informações do form da interface e repassar os dados para o módulo Conta 
-  - Saldo: deve exibir as informações de data de acesso e do saldo para o usuário na interface acessando esses dados através do módulo Conta 
+* Los componentes
+  - Nueva transacción: debe simplemente recopilar la información del formulario de la interfaz y pasar los datos al módulo Cuenta.
+  - Saldo: debe mostrar la información de la fecha de acceso y el saldo al usuario en la interfaz, accediendo a estos datos a través 
+  del módulo Cuenta.
