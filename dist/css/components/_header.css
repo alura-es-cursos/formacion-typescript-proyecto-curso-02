@@ -1,0 +1,13 @@
+.header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: var(--font-t3);
+    padding-block: 30px;
+    margin-bottom: 24px;
+
+    .user {
+        & span {
+            margin-right: 40px;
+        }
+    }
+}

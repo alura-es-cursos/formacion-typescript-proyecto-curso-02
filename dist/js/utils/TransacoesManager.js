@@ -1,14 +1,14 @@
-const transacoes = JSON.parse(localStorage.getItem('transacoes'), (key, value) => {
-    if (key === 'data') {
+const transactions = JSON.parse(localStorage.getItem('transactions'), (key, value) => {
+    if (key === 'date') {
         return new Date(value);
     }
     return value;
 }) || [];
-export const TransacoesManager = {
-    registrarTransacao: (novaTransacao) => {
-        transacoes.push(novaTransacao);
+export const TransactionsManager = {
+    registerTransaction: (newTransaction) => {
+        transactions.push(newTransaction);
     },
-    getTransacoes: () => {
-        return Array.from(transacoes);
+    getTransaction: () => {
+        return Array.from(transactions);
     }
 };

@@ -1,21 +1,26 @@
-import { FormatoData } from "../types/FormatoData.js";
+import { FormatDate } from '../types/FormatDate.js'
 
-export function formatarMoeda(valor: number): string {
-    return valor.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
+export function formatCurrency(valor: number): string {
+  return valor.toLocaleString('es-ES', { style: 'currency', currency: 'USD' })
 }
 
-export function formatarData(data: Date, formato: FormatoData = FormatoData.PADRAO): string {
-    if (formato === FormatoData.DIA_SEMANA_DIA_MES_ANO) {
-        return data.toLocaleDateString("pt-br", {
-            weekday: "long",
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric"
-        });
-    }
-    else if (formato === FormatoData.DIA_MES) {
-        return data.toLocaleDateString("pt-br", { day: "2-digit", month: "2-digit" });
-    }
+export function formatDate(
+  date: Date,
+  format: FormatDate = FormatDate.DEFAULT
+): string {
+  if (format === FormatDate.WEEKDAY_DAY_MONTH_YEAR) {
+    return date.toLocaleDateString('es-ES', {
+      weekday: 'long',
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    })
+  } else if (format === FormatDate.DAY_MONTH) {
+    return date.toLocaleDateString('es-ES', {
+      day: '2-digit',
+      month: '2-digit',
+    })
+  }
 
-    return data.toLocaleDateString("pt-br");
+  return date.toLocaleDateString('es-ES')
 }
