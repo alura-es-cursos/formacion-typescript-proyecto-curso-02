@@ -1,4 +1,4 @@
-![Typescript: orientación a objetos](https://imgur.com/9399vxd.png)
+![Typescript: orientación a objetos](https://imgur.com/SwjE6uR.png)
 
 # TypeScript: orientación a objetos
 
@@ -13,4 +13,4 @@ El proyecto incluirá el desarrollo de:
 - Herencia de clases;
 - Modificadores de acceso;
 - Método estático;
-- Decoradores de validación.
+- Decoradores de Clase y de Método.
