@@ -1,4 +1,4 @@
-![Typescript: orientación a objetos](https://imgur.com/SwjE6uR)
+![Typescript: orientación a objetos](https://imgur.com/SwjE6uR.png)
 
 # TypeScript: orientación a objetos
 
