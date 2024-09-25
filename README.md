@@ -1,4 +1,4 @@
-![Typescript: orientación a objetos]("/typescript-orientacion-objetos.webp")
+![Typescript: orientación a objetos](https://imgur.com/SwjE6uR)
 
 # TypeScript: orientación a objetos
 
